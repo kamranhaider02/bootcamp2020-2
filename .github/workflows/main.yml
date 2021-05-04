@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2-beta
         with:
-          node-version: 12
+          node-version: 10
 
       - name: GitHub Action for Yarn
         # You may pin to the exact commit or the version.
@@ -37,7 +37,7 @@ jobs:
         with:
           # Yarn command
           cmd: install
-          
+
       - name: Building our App
         run: yarn build
       - name: Installing Surge
