@@ -42,5 +42,5 @@ jobs:
       - name: Building our App
         run: yarn build
       - name: Deploying web on surge
-        run: surge ./build 
+        run: surge ./build bootcamp2020-class2-from-kamran.surge.sh --token ${{secrets.SURGE_TOKEN}}
       
